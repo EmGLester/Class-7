@@ -4,3 +4,12 @@
 
 
     
+function wave (wave) {
+return function (name) {
+  return `${name}! ${wave}`;
+}
+
+const friendlyWave = wave("Hola!")
+const informalWave = wave("What's up?")
+
+}
