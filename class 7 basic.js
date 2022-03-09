@@ -5,13 +5,12 @@
  
 function wave (wave) {
 return function (name) {
-  return `${name}! ${wave}`;
+  return `${wave} ${name}`;
 };
 }
 
-cons friendlyWave = wave("hola!");
-cons informalWave = wave("What's up?");
+let friendlyWave = wave ("Hola");
+let informalWave = wave ("What's up");
 
 console.log ("friendlyWave:", friendlyWave("Isabelle"));
 console.log ("informalWave:", informalWave("Isabelle"));
-
